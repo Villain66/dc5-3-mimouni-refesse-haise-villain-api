@@ -1,4 +1,3 @@
-// controllers/campaignController.js
 const uuid = require('uuid/v1');
 const campaigns = require('../campaigns');
 
@@ -38,7 +37,6 @@ exports.deleteCampaign = (req, res, next) => {
   }
 };
 
-// Function to find campaign by ID
 function findCampaignById(id) {
   return campaigns.find(c => c.id === id);
 }

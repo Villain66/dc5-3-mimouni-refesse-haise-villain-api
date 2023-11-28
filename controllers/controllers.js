@@ -1,5 +1,5 @@
-const uuid = require('uuid/v1');
-const campaigns = require('../campaigns');
+const uuid = require('uuid');
+const campaigns = require('../campaigns/campaigns');
 
 exports.getAllCampaigns = (req, res, next) => {
   res.status(200).json(campaigns);

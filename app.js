@@ -12,5 +12,5 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use(express.static('images'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use('/api/campaigns', routes);
+app.use('/api/campaigns', campaignRoutes);
 module.exports = app;

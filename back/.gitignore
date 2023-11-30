@@ -1,0 +1,2 @@
+# Cela permet d'ignoer le dossier node_modules lors des commits
+node_modules/

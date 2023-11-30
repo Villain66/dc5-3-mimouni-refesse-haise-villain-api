@@ -7,7 +7,7 @@ exports.getAllCampaigns = (req, res, next) => {
 
 exports.getCampaignById = (req, res, next) => {
   const campaignId = req.params.id;
-  const campaign = findCampaignById(campaignId);
+  const campaign = getCampaignById(campaignId);
 
   if (campaign) {
     res.status(200).json(campaign);
@@ -37,6 +37,6 @@ exports.deleteCampaign = (req, res, next) => {
   }
 };
 
-function findCampaignById(id) {
+function getCampaignById(id) {
   return campaigns.find(c => c.id === id);
 }

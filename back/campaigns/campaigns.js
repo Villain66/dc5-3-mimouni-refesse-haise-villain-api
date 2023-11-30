@@ -39,8 +39,8 @@ exports.find = () => {
   
   exports.findById = (id) => {
     return new Promise((resolve, reject) =>
-      resolve(JSON.parse(JSON.stringify(campaigns)).find(campaign =>
-        campaigns._id == id)
-      )
+        resolve(JSON.parse(JSON.stringify(campaigns)).find(campaign =>
+            campaign.id == id)
+        )
     );
-  }
+}
